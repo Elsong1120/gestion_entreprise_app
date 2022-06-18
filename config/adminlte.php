@@ -255,13 +255,13 @@ return [
         // ],
         // ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
+            'text' => 'Profile compagnies',
+            'url'  => '/profilcompany',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'chat',
-            'url'  => 'admin/settings',
+            'url'  => '/chat',
             'icon' => ' fas fa-solid fa-comments',
         ],
         // [
