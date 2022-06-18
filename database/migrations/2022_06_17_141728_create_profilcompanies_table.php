@@ -15,13 +15,14 @@ return new class extends Migration
     {
         Schema::create('profilcompanies', function (Blueprint $table) {
             $table->string('tax_num')->primary();
+            $table->unsignedBigInteger('id')->increments();
             $table->string('activity');
             $table->string('adress');
             $table->string('city');
             $table->string('fixline_num');
             $table->string('postcode');
             $table->string('country');
-            $table->foreignId('user_id')->constrianed('users', 'id');
+            $table->foreign('id')->references('id')->on('users');
             $table->timestamps();
         });
     }
