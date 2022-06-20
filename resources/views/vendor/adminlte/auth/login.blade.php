@@ -80,6 +80,20 @@
             </div>
         </div>
 
+        <div class="socialite-content">
+           <div class="d-flex align-items-center my-2">
+               <span class="w-50 bg-secondary" style="height: 1px"></span><span class="px-2">or</span><span class="w-50 bg-secondary" style="height: 1px"></span>
+             </div> 
+
+             <div class="google-btn mx-auto">
+                <div class="google-icon-wrapper">
+                  <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                </div>
+                {{-- <p class="btn-text"><b>Sign in with google</b></p> --}}
+                <a href="{{route('socialite.redirect','google')}}" class="btn-text" title="Sign in with google"> Sign in with google</a>        
+              </div>
+        </div>
+
     </form>
 @stop
 

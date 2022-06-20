@@ -31,8 +31,9 @@ class Userseeder extends Seeder
                 'email' => 'oklm@gmail.com',
                 'email_verified_at' => now(),
                 'password' => Hash::make('test'),
-                'isprofilcompleted' => true,
+                'isprofilcompleted' => false,
             ],
+
         ]);
     }
 }

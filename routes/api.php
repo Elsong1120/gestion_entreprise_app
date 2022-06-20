@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //Public Route
-Route::post('v1/register/user', [AuthController::class, 'register']);
+Route::post('v1/register/user', [AuthApiController::class, 'register']);
 Route::post('/v1/login/user', [AuthApiController::class, 'login']);
 
 // Private Route
