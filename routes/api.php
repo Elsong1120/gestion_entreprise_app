@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApiControllers\AuthApiController;
+use App\Http\Controllers\ApiControllers\CompanydataApiController;
 use App\Http\Controllers\ApiControllers\ProfilcompanyApiController;
 
 use Illuminate\Http\Request;
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 //Public Route
 Route::post('v1/register/user', [AuthApiController::class, 'register']);
 Route::post('/v1/login/user', [AuthApiController::class, 'login']);
+//Company Data
+Route::get('/v1/vatnumber/{vatNumber}/check', [CompanydataApiController::class, 'checkVatNumber']);
 
 // Private Route
 Route::group(['middleware' => ['auth:sanctum']], function () {
